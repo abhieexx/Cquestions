@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BASIC INPUT OUTPUT FUNCTIONS</title>
+
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
     <h4 style="text-align: center;">
-        <a href="index.html" class="Home-link">HOME</a>
+        <a href="index.html" class=" Home-link"> Home</a>
     </h4>
 
     <h1>BASIC INPUT OUTPUT</h1>
@@ -23,21 +25,23 @@
 
         <div class="question">
             <pre><b>Q1. Write a program to print the message:
-Welcome to my first C programming class.</b></pre>
+Learning C Programming is interesting!</b></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 void main()
 {
-    printf("Welcome to my first C programming class.");
+    printf("Learning C Programming is interesting!");
 }</code></pre>
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
-            <pre><code>Welcome to my first C programming class.</code></pre>
+            <pre><code>Learning C Programming is interesting!</code></pre>
         </div>
     </div>
 
@@ -49,6 +53,7 @@ void main()
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 void main()
@@ -56,14 +61,15 @@ void main()
     char ch;
     printf("ENTER A CHARACTER: ");
     scanf(" %c", &amp;ch);
-    printf("Character = %c", ch);
+    printf("Your character is = %c", ch);
 }</code></pre>
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
             <pre><code>ENTER A CHARACTER: M
-Character = M</code></pre>
+Your character is = M</code></pre>
         </div>
     </div>
 
@@ -75,6 +81,7 @@ Character = M</code></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 void main()
@@ -89,6 +96,7 @@ void main()
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
             <pre><code>ENTER 4 CHARACTERS: WXYZ
 W
@@ -106,6 +114,7 @@ Z</code></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 void main()
@@ -115,6 +124,7 @@ void main()
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
             <pre><code>        ABHAY OJHA</code></pre>
         </div>
@@ -124,23 +134,26 @@ void main()
         <h2>QUESTION 5</h2>
 
         <div class="question">
-            <pre><b>Q5. Write a program to store single quote and print that variable to show single quote on output screen.</b></pre>
+            <pre><b>Q5. Write a program to store a single quote and print that variable on the output screen.</b></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 
 void main()
 {
     char ch = '\'';
-    printf("The single quote symbol is: %c\n", ch);
+
+    printf("Stored quotation mark is: %c\n", ch);
 }</code></pre>
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
-            <pre><code>The single quote symbol is: '</code></pre>
+            <pre><code>Stored quotation mark is: '</code></pre>
         </div>
     </div>
 
@@ -148,10 +161,11 @@ void main()
         <h2>QUESTION 6</h2>
 
         <div class="question">
-            <pre><b>Q6. Write a program for printing your name on output screen but your name should blink 5 times.</b></pre>
+            <pre><b>Q6. Write a program for printing your name on the output screen but your name should blink 5 times.</b></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 #include &lt;conio.h&gt;
@@ -162,7 +176,7 @@ void main()
     int i;
     clrscr();
 
-    for(i=1; i&lt;=5; i++)
+    for(i = 1; i &lt;= 5; i++)
     {
         printf("ABHAY OJHA");
         delay(500);
@@ -175,6 +189,7 @@ void main()
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
             <pre><code>ABHAY OJHA</code></pre>
         </div>
@@ -184,10 +199,11 @@ void main()
         <h2>QUESTION 7</h2>
 
         <div class="question">
-            <pre><b>Q7. Write a program to display the following C program as text on the output screen.</b></pre>
+            <pre><b>Q7. Write a program to display the following C program as output.</b></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 #include &lt;conio.h&gt;
@@ -197,30 +213,31 @@ void main()
 {
     clrscr();
 
-    printf("#include\n");
-    printf("#include\n");
-    printf("#include\n");
+    printf("#include &lt;stdio.h&gt;\n");
+    printf("#include &lt;conio.h&gt;\n");
+    printf("#include &lt;dos.h&gt;\n");
     printf("void main()\n");
     printf("{\n");
-    printf("clrscr();\n");
-    printf("printf(\"Welcome to C programming\");\n");
-    printf("delay(5000);\n");
+    printf("    clrscr();\n");
+    printf("    printf(\"Welcome to C Programming\");\n");
+    printf("    delay(3000);\n");
     printf("}");
 
-    delay(5000);
+    delay(3000);
 }</code></pre>
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
-            <pre><code>#include
-#include
-#include
+            <pre><code>#include &lt;stdio.h&gt;
+#include &lt;conio.h&gt;
+#include &lt;dos.h&gt;
 void main()
 {
-clrscr();
-printf("Welcome to C programming");
-delay(5000);
+    clrscr();
+    printf("Welcome to C Programming");
+    delay(3000);
 }</code></pre>
         </div>
     </div>
@@ -233,6 +250,7 @@ delay(5000);
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 #include &lt;conio.h&gt;
@@ -240,12 +258,14 @@ delay(5000);
 void main()
 {
     clrscr();
+
     printf("\n\n\n");
     printf("                                                            ABHAY OJHA");
 }</code></pre>
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
             <pre><code>
 
@@ -258,10 +278,11 @@ void main()
         <h2>QUESTION 9</h2>
 
         <div class="question">
-            <pre><b>Q9. Enter password and display it like ******.</b></pre>
+            <pre><b>Q9. Write a program to enter a password and display it in the form of ******.</b></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 #include &lt;conio.h&gt;
@@ -273,23 +294,22 @@ void main()
 
     clrscr();
 
-    printf("Enter 6 digit Password: ");
+    printf("Enter 6 character Password: ");
 
-    for(i=0; i&lt;6; i++)
+    for(i = 0; i &lt; 6; i++)
     {
         pass[i] = getch();
         printf("*");
     }
 
     pass[6] = '\0';
-
-    getch();
 }</code></pre>
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
-            <pre><code>Enter 6 digit Password: ******</code></pre>
+            <pre><code>Enter 6 character Password: ******</code></pre>
         </div>
     </div>
 
@@ -297,10 +317,11 @@ void main()
         <h2>QUESTION 10</h2>
 
         <div class="question">
-            <pre><b>Q10. Enter two characters from user and print their ASCII values.</b></pre>
+            <pre><b>Q10. Enter two characters from the user and print their ASCII values.</b></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 #include &lt;conio.h&gt;
@@ -323,11 +344,12 @@ void main()
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
-            <pre><code>Enter first character: X
-Enter second character: Y
-ASCII value of first character = 88
-ASCII value of second character = 89</code></pre>
+            <pre><code>Enter first character: C
+Enter second character: D
+ASCII value of first character = 67
+ASCII value of second character = 68</code></pre>
         </div>
     </div>
 
@@ -335,10 +357,11 @@ ASCII value of second character = 89</code></pre>
         <h2>QUESTION 11</h2>
 
         <div class="question">
-            <pre><b>Q11. Print all ASCII characters from 0 to 127.</b></pre>
+            <pre><b>Q11. Write a program to print all ASCII characters from 0 to 127.</b></pre>
         </div>
 
         <h3>CODE</h3>
+
         <div class="code">
             <pre><code>#include &lt;stdio.h&gt;
 #include &lt;conio.h&gt;
@@ -349,16 +372,15 @@ void main()
 
     clrscr();
 
-    for(i=0; i&lt;=127; i++)
+    for(i = 0; i &lt;= 127; i++)
     {
         printf("%d = %c\n", i, i);
     }
-
-    getch();
 }</code></pre>
         </div>
 
         <h3>OUTPUT</h3>
+
         <div class="output">
             <pre><code>0 =
 1 =
@@ -366,14 +388,26 @@ void main()
 65 = A
 66 = B
 67 = C
+68 = D
 ...
-88 = X
-89 = Y
-90 = Z
-...
-97 = a
-98 = b
-...
+104 = h
+105 = i
+106 = j
+107 = k
+108 = l
+109 = m
+110 = n
+111 = o
+112 = p
+113 = q
+114 = r
+115 = s
+116 = t
+117 = u
+118 = v
+119 = w
+120 = x
+121 = y
 122 = z
 123 = {
 124 = |
@@ -385,9 +419,7 @@ void main()
 
     <hr>
 
-    <p style="text-align: center;">
-        <a href="index.html" class="back-link">Back To Topics</a>
-    </p>
+    <a href="index.html" class=" back-link"> back to topic </a>
 
     <div class="footer">
         <p>BCA 1st Year | C Programming Practical Questions</p>
